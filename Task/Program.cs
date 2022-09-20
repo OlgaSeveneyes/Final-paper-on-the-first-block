@@ -12,27 +12,27 @@ PrintArray (newArray);
 
 string [] NewArray (string [] array)
 {
-string[] result = new string[array.Length];
-int index = 0;
-for (int i = 0; i < array.Length; i++)
-{
-    if (array[i].Length <= 3)
+    string[] result = new string[array.Length];
+    int index = 0;
+    for (int i = 0; i < array.Length; i++)
     {
-       result[index] = array[i];  
-       index++;    
+        if (array[i].Length <= 3)
+        {
+            result[index] = array[i];  
+            index++;    
+        }
     }
-}
-return result;
+    return result;
 }
 
 // выводит массив в консоль
 
 void PrintArray (string [] inArray)
 {
-for (int i = 0; i < inArray.Length; i++)
-{
+    for (int i = 0; i < inArray.Length; i++)
     {
-       Console.Write($"{inArray[i]} ");
+        {
+            Console.Write($"{inArray[i]} ");
+        }
     }
-}
 }
